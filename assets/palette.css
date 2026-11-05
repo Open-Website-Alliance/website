@@ -1,0 +1,102 @@
+/* Open Website Alliance — proposed member-derived website palette.
+   Four member colors are sampled from the logos in images/logos/.
+   Supporting neutrals and semantic roles are design recommendations, not
+   an official Alliance brand standard. Keep member logos unmodified. */
+:root {
+  /* Member colors: identical in both themes. */
+  --owa-drupal: #009CDE;
+  --owa-joomla: #7AC143;
+  --owa-typo3: #FF8700;
+  --owa-wordpress: #32373C;
+
+  /* Supporting neutrals. */
+  --owa-porcelain: #F5F7FA;
+  --owa-white: #FFFFFF;
+  --owa-mist: #D9E1E6;
+  --owa-ink: #17242C;
+
+  /* Light theme. */
+  color-scheme: light;
+  --owa-background: var(--owa-white);
+  --owa-surface: var(--owa-white);
+  --owa-text: var(--owa-wordpress);
+  --owa-divider: var(--owa-mist);
+  --owa-control-border: var(--owa-wordpress);
+  --owa-link: var(--owa-wordpress);
+  --owa-action: var(--owa-wordpress);
+  --owa-on-action: var(--owa-white);
+  --owa-action-hover: var(--owa-ink);
+  --owa-focus: var(--owa-ink);
+
+  /* Small text on the original bright fills needs dark ink, not white.
+     Ink/cyan 5.14:1; ink/green 7.20:1; ink/orange 6.58:1.
+     White/charcoal 12.02:1. Ratios apply to opaque, solid fills. */
+  --owa-on-bright: var(--owa-ink);
+  --owa-on-charcoal: var(--owa-white);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --owa-background: var(--owa-ink);
+    --owa-surface: var(--owa-wordpress);
+    --owa-text: var(--owa-porcelain);
+    --owa-divider: var(--owa-mist);
+    --owa-control-border: var(--owa-mist);
+    --owa-link: var(--owa-white);
+    --owa-action: var(--owa-white);
+    --owa-on-action: var(--owa-ink);
+    --owa-action-hover: var(--owa-mist);
+    --owa-focus: var(--owa-white);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --owa-background: var(--owa-ink);
+  --owa-surface: var(--owa-wordpress);
+  --owa-text: var(--owa-porcelain);
+  --owa-divider: var(--owa-mist);
+  --owa-control-border: var(--owa-mist);
+  --owa-link: var(--owa-white);
+  --owa-action: var(--owa-white);
+  --owa-on-action: var(--owa-ink);
+  --owa-action-hover: var(--owa-mist);
+  --owa-focus: var(--owa-white);
+}
+
+/* Example opt-in classes; these do not restyle an existing site by default. */
+.owa-page {
+  background: var(--owa-background);
+  color: var(--owa-text);
+}
+.owa-surface { background: var(--owa-surface); }
+.owa-link {
+  color: var(--owa-link);
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+.owa-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: .75em 1.2em;
+  background: var(--owa-action);
+  color: var(--owa-on-action);
+  border: 2px solid var(--owa-action);
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+.owa-button:hover {
+  background: var(--owa-action-hover);
+  border-color: var(--owa-action-hover);
+}
+:where(.owa-link, .owa-button):focus-visible {
+  outline: 3px solid var(--owa-focus);
+  outline-offset: 4px;
+}
+/* Mist is a decorative divider on light surfaces, not a control outline.
+   Use --owa-control-border where a visible boundary identifies a control.
+   Member names must remain visible; color alone is not an identifier. */

@@ -1,0 +1,255 @@
+{
+  "memberProfiles": [
+    {
+      "member": "Drupal",
+      "profiles": [
+        {
+          "label": "Bluesky",
+          "url": "https://bsky.app/profile/drupalassociation.bsky.social",
+          "name": "Drupal Association on Bluesky"
+        },
+        {
+          "label": "Flickr",
+          "url": "https://www.flickr.com/photos/drupalassoc/",
+          "name": "Drupal Association on Flickr (photo archive)"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/drupalassociation/",
+          "name": "Drupal Association on Instagram"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/company/drupal-association/",
+          "name": "Drupal Association on LinkedIn"
+        },
+        {
+          "label": "Mastodon",
+          "url": "https://mastodon.social/@drupalassoc",
+          "name": "Drupal Association on Mastodon"
+        },
+        {
+          "label": "Threads",
+          "url": "https://www.threads.com/@drupalassociation",
+          "name": "Drupal Association on Threads"
+        },
+        {
+          "label": "X",
+          "url": "https://twitter.com/DrupalAssoc",
+          "name": "Drupal Association on X (signpost account)"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@DrupalAssociation",
+          "name": "Drupal Association on YouTube"
+        }
+      ]
+    },
+    {
+      "member": "Joomla!",
+      "profiles": [
+        {
+          "label": "Bluesky",
+          "url": "https://bsky.app/profile/joomla.org",
+          "name": "Joomla! on Bluesky"
+        },
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/joomla",
+          "name": "Joomla! on Facebook"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/joomlaofficial/",
+          "name": "Joomla! on Instagram"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/company/joomla",
+          "name": "Joomla! on LinkedIn"
+        },
+        {
+          "label": "Mastodon",
+          "url": "https://joomla.social/@joomla",
+          "name": "Joomla! on Mastodon"
+        },
+        {
+          "label": "Pinterest",
+          "url": "https://www.pinterest.com/joomla",
+          "name": "Joomla! on Pinterest"
+        },
+        {
+          "label": "Threads",
+          "url": "https://www.threads.com/@joomlaofficial",
+          "name": "Joomla! on Threads"
+        },
+        {
+          "label": "X",
+          "url": "https://x.com/joomla",
+          "name": "Joomla! on X"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@joomla",
+          "name": "Joomla! on YouTube"
+        }
+      ]
+    },
+    {
+      "member": "TYPO3",
+      "profiles": [
+        {
+          "label": "Bluesky",
+          "url": "https://bsky.app/profile/typo3.com",
+          "name": "TYPO3 on Bluesky"
+        },
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/typo3",
+          "name": "TYPO3 on Facebook"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/typo3_official",
+          "name": "TYPO3 on Instagram"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/company/typo3-gmbh",
+          "name": "TYPO3 on LinkedIn"
+        },
+        {
+          "label": "Mastodon",
+          "url": "https://typo3.social/@typo3",
+          "name": "TYPO3 on Mastodon"
+        },
+        {
+          "label": "X",
+          "url": "https://twitter.com/typo3",
+          "name": "TYPO3 on X (historical account)"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/c/typo3",
+          "name": "TYPO3 on YouTube"
+        }
+      ]
+    },
+    {
+      "member": "WordPress",
+      "profiles": [
+        {
+          "label": "Bluesky",
+          "url": "https://bsky.app/profile/wordpress.org",
+          "name": "WordPress on Bluesky"
+        },
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/WordPress/",
+          "name": "WordPress on Facebook"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/wordpress/",
+          "name": "WordPress on Instagram"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/company/wordpress",
+          "name": "WordPress on LinkedIn"
+        },
+        {
+          "label": "Mastodon",
+          "url": "https://mastodon.world/@WordPress",
+          "name": "WordPress on Mastodon"
+        },
+        {
+          "label": "Threads",
+          "url": "https://www.threads.net/@wordpress",
+          "name": "WordPress on Threads"
+        },
+        {
+          "label": "TikTok",
+          "url": "https://www.tiktok.com/@wordpress",
+          "name": "WordPress on TikTok"
+        },
+        {
+          "label": "Tumblr",
+          "url": "https://wordpress.tumblr.com/",
+          "name": "WordPress on Tumblr"
+        },
+        {
+          "label": "X",
+          "url": "https://www.x.com/WordPress",
+          "name": "WordPress on X"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/wordpress",
+          "name": "WordPress on YouTube"
+        }
+      ]
+    }
+  ],
+  "memberLogos": [
+    {
+      "member": "Drupal",
+      "light": "drupal.svg",
+      "dark": "drupal-dark.svg"
+    },
+    {
+      "member": "Joomla!",
+      "light": "joomla.svg",
+      "dark": "joomla-dark.svg"
+    },
+    {
+      "member": "TYPO3",
+      "light": "typo3.svg",
+      "dark": "typo3-dark.svg"
+    },
+    {
+      "member": "WordPress",
+      "light": "wordpress.svg",
+      "dark": "wordpress-dark.png"
+    }
+  ],
+  "documentAnchors": [
+    {
+      "name": "index",
+      "anchors": [
+        "wordpress-card",
+        "contact"
+      ]
+    },
+    {
+      "name": "charter",
+      "anchors": [
+        "name",
+        "purpose",
+        "members",
+        "members-1",
+        "members-2",
+        "members-3",
+        "members-4",
+        "members-5",
+        "members-6",
+        "members-7",
+        "members-8",
+        "members-9",
+        "members-10",
+        "presidency-leadership",
+        "meetings",
+        "voting",
+        "open-web-manifesto"
+      ]
+    },
+    {
+      "name": "membership-process",
+      "anchors": []
+    },
+    {
+      "name": "privacy",
+      "anchors": []
+    }
+  ]
+}
