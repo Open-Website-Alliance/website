@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Website Alliance — member-derived color palette</title>
+<style>
+:root { color-scheme:light; --foreground:#32373C; --muted-foreground:#32373C; --border:#D9E1E6; --board-background:#F5F7FA; }
+body { margin:24px; background:var(--board-background); font-family:system-ui,sans-serif; }
+a { color:inherit; text-underline-offset:.2em; }
+a:focus-visible { outline:3px solid var(--foreground); outline-offset:4px; }
+@media (prefers-color-scheme:dark) { :root { color-scheme:dark; --foreground:#F5F7FA; --muted-foreground:#D9E1E6; --board-background:#17242C; } }
+* { box-sizing: border-box; }
+.palette { width: min(100%, 920px); color: var(--foreground, #32373C); line-height: 1.5; overflow-wrap: anywhere; }
+.swatch, .sample { min-width: 0; }
+.palette h2 { margin: 0 0 6px; font-size: 1.55rem; line-height: 1.25; font-weight: 650; letter-spacing: -.025em; }
+.palette .intro { margin: 0 0 22px; max-width: 66ch; color: var(--muted-foreground, #32373C); font-size: 1rem; }
+.palette h3 { font-size: 1rem; font-weight: 600; margin: 24px 0 10px; }
+.swatches { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 0; padding: 0; list-style: none; }
+.swatch { display: flex; flex-direction: column; justify-content: space-between; min-height: 150px; padding: 17px; gap: 25px; background: var(--fill); color: var(--on); border: 1px solid var(--border, #D9E1E6); }
+.swatch strong { font-size: 1.05rem; font-weight: 650; }
+.swatch .hex { font-size: 1.1rem; font-variant-numeric: tabular-nums; letter-spacing: .015em; }
+.swatch .name { display: block; font-size: .92rem; }
+.neutrals .swatch { min-height: 104px; gap: 15px; padding: 14px 17px; }
+.neutrals .swatch strong { font-size: 1rem; }
+.neutrals .swatch .hex { font-size: 1rem; }
+.samples { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.sample { padding: 24px; border: 1px solid var(--border, #D9E1E6); background: var(--paper); color: var(--ink); }
+.sample .mode { margin: 0 0 18px; font-size: .95rem; }
+.sample h4 { margin: 0 0 12px; font-size: 1.8rem; line-height: 1.15; font-weight: 650; letter-spacing: -.035em; max-width: 13ch; }
+.sample p { font-size: 1rem; margin: 0 0 20px; max-width: 31ch; }
+.action-example { display: inline-flex; align-items: center; min-height: 44px; padding: 10px 17px; font-weight: 550; background: var(--button); color: var(--button-ink); }
+.member-marks { display: flex; gap: 9px; align-items: center; margin-top: 25px; }
+.member-marks span { width: 24px; height: 7px; background: var(--fill); }
+.member-marks .charcoal { outline: 1px solid var(--ink); outline-offset: 0; }
+.note { font-size: .95rem; line-height: 1.55; margin: 16px 0 0; max-width: 80ch; color: var(--muted-foreground, #32373C); }
+@media (max-width: 600px) {
+  .swatches { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .samples { grid-template-columns: 1fr; }
+  .swatch { min-height: 130px; padding: 15px; }
+  .sample h4 { max-width: 17ch; }
+}
+@media (max-width: 340px) {
+  .swatch { padding: 11px; }
+  .neutrals .swatch { padding: 11px; }
+}
+</style>
+</head>
+<body>
+<main class="palette" aria-labelledby="palette-heading">
+  <h2 id="palette-heading">Four members. One shared palette.</h2>
+  <p class="intro">A charcoal foundation with cyan, green and orange accents. Colors sampled from the member logos on the Alliance website.</p>
+  <ul class="swatches" aria-label="Member colors">
+    <li class="swatch" data-member="Drupal" style="--fill:#009CDE;--on:#17242C"><strong>Drupal</strong><div><span class="hex">#009CDE</span><span class="name">Cyan</span></div></li>
+    <li class="swatch" data-member="Joomla!" style="--fill:#7AC143;--on:#17242C"><strong>Joomla!</strong><div><span class="hex">#7AC143</span><span class="name">Green</span></div></li>
+    <li class="swatch" data-member="TYPO3" style="--fill:#FF8700;--on:#17242C"><strong>TYPO3</strong><div><span class="hex">#FF8700</span><span class="name">Orange</span></div></li>
+    <li class="swatch" data-member="WordPress" style="--fill:#32373C;--on:#FFFFFF"><strong>WordPress</strong><div><span class="hex">#32373C</span><span class="name">Charcoal</span></div></li>
+  </ul>
+  <h3>Supporting neutrals</h3>
+  <ul class="swatches neutrals" aria-label="Supporting neutrals">
+    <li class="swatch" style="--fill:#F5F7FA;--on:#17242C"><strong>Porcelain</strong><span class="hex">#F5F7FA</span></li>
+    <li class="swatch" style="--fill:#FFFFFF;--on:#17242C"><strong>White</strong><span class="hex">#FFFFFF</span></li>
+    <li class="swatch" style="--fill:#D9E1E6;--on:#17242C"><strong>Mist</strong><span class="hex">#D9E1E6</span></li>
+    <li class="swatch" style="--fill:#17242C;--on:#FFFFFF"><strong>Deep ink</strong><span class="hex">#17242C</span></li>
+  </ul>
+  <h3>Website application</h3>
+  <div class="samples" aria-label="Illustrative light and dark treatments">
+    <section class="sample" style="--paper:#FFFFFF;--ink:#32373C;--button:#32373C;--button-ink:#FFFFFF" aria-label="Light theme example">
+      <p class="mode">Light</p>
+      <h4>A community of communities.</h4>
+      <p>Openness, trust, and quality.</p>
+      <span class="action-example">Alliance Charter</span>
+      <div class="member-marks" aria-hidden="true"><span style="--fill:#009CDE"></span><span style="--fill:#7AC143"></span><span style="--fill:#FF8700"></span><span class="charcoal" style="--fill:#32373C"></span></div>
+    </section>
+    <section class="sample" style="--paper:#17242C;--ink:#F5F7FA;--button:#FFFFFF;--button-ink:#17242C" aria-label="Dark theme example">
+      <p class="mode">Dark</p>
+      <h4>A community of communities.</h4>
+      <p>Openness, trust, and quality.</p>
+      <span class="action-example">Alliance Charter</span>
+      <div class="member-marks" aria-hidden="true"><span style="--fill:#009CDE"></span><span style="--fill:#7AC143"></span><span style="--fill:#FF8700"></span><span class="charcoal" style="--fill:#32373C"></span></div>
+    </section>
+  </div>
+  <p class="note">Use Deep ink on the three bright fills and white on Charcoal. The “Alliance Charter” treatments above are visual specimens, not live controls. This is the website palette, not an official Alliance brand standard.</p>
+  <p class="note"><a href="PALETTE.md">Usage and source notes</a> · <a href="assets/palette.css">Reusable CSS tokens</a></p>
+</main>
+</body>
+</html>

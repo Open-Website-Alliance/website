@@ -1,0 +1,12 @@
+.spacefast/
+.env
+.env.*
+*.key
+*.pem
+secrets/
+__pycache__/
+.venv/
+*.pyc
+qa-reports/
+dist/
+*.private.*
